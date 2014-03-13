@@ -17,23 +17,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-jade-client');
 ```
 
-## The "jade_client" task
-
-### Overview
-In your project's Gruntfile, add a section named `jadeClient` to the data object passed into `grunt.initConfig()`.
-
-```js
-grunt.initConfig({
-  jade_client: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
-});
-```
+## The "jadeClient" task
 
 ### Options
 
