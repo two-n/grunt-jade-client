@@ -1,8 +1,8 @@
 /*
  * grunt-jade-client
- * https://github.com/travissheppard/grunt-jade-client
+ * https://github.com/two-n/grunt-jade-client
  *
- * Copyright (c) 2014 Travis Sheppard
+ * Copyright (c) 2014 TWO-N, Inc.
  * Licensed under the MIT license.
  */
 
@@ -29,23 +29,18 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    jade_client: {
-      default_options: {
+    jadeClient: {
+      helloWorld: {
         options: {
+          requireJs: true
         },
         files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123'],
-        },
-      },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!',
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123'],
-        },
-      },
+          'tmp/hello_world.js': {
+            'hello': 'test/fixtures/templates/hello_world.jade',
+            'hola': 'test/fixtures/templates/hola_mundo.jade'
+          },
+        }
+      }
     },
 
     // Unit tests.
@@ -65,7 +60,7 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'jade_client', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'jadeClient:helloWorld', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);

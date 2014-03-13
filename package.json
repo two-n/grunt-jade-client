@@ -2,22 +2,22 @@
   "name": "grunt-jade-client",
   "description": "A grunt task to compile jade templates into a javascript file (like templates.js) to use on the client",
   "version": "0.1.0",
-  "homepage": "https://github.com/travissheppard/grunt-jade-client",
+  "homepage": "https://github.com/two-n/grunt-jade-client",
   "author": {
-    "name": "Travis Sheppard",
-    "email": "travissheppard.1988@gmail.com"
+    "name": "TWO-N, Inc.",
+    "email": "travis@two-n.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/travissheppard/grunt-jade-client.git"
+    "url": "git://github.com/two-n/grunt-jade-client.git"
   },
   "bugs": {
-    "url": "https://github.com/travissheppard/grunt-jade-client/issues"
+    "url": "https://github.com/two-n/grunt-jade-client/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/travissheppard/grunt-jade-client/blob/master/LICENSE-MIT"
+      "url": "https://github.com/two-n/grunt-jade-client/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
@@ -30,7 +30,8 @@
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-clean": "~0.4.0",
     "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt": "~0.4.4"
+    "grunt": "~0.4.4",
+    "jade": "~0.30.0"
   },
   "peerDependencies": {
     "grunt": "~0.4.4"
