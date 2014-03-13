@@ -34,9 +34,10 @@
     "jade": "~0.30.0"
   },
   "peerDependencies": {
-    "grunt": "~0.4.4"
+    "grunt": "~0.4.0-"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "jade"
   ]
 }

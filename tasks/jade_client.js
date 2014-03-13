@@ -36,28 +36,9 @@ module.exports = function(grunt) {
         templateString += "JST['" + namespace + "'] = " + contents + ";\n";
       }
 
-      templateString += 'return JST;\n';
-
-      // // Concat specified files.
-      // var src = f.src.filter(function(filepath) {
-
-
-
-      //   // Warn on and remove invalid source files (if nonull was set).
-      //   if (!grunt.file.exists(filepath)) {
-      //     grunt.log.warn('Source file "' + filepath + '" not found.');
-      //     return false;
-      //   } else {
-      //     return true;
-      //   }
-      // }).map(function(filepath) {
-      //   // Read file source.
-      //   return grunt.file.read(filepath);
-      // }).join(grunt.util.normalizelf(options.separator));
-
       // Handle options.
       if (options.requireJs) {
-        templateString = "define(['jade'], function(jade) {\n" + templateString + '});\n';
+        templateString = "define(['jade'], function(jade) {\n" + templateString + 'return JST;\n' + '});\n';
       }
 
       // Write the destination file.
