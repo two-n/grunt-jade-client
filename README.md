@@ -58,7 +58,7 @@ or in CoffeeScript
       options:
         requireJs: true
       files:
-        tmp/hello_world.js:
+        'tmp/hello_world.js':
           'hello': 'test/fixtures/templates/hello_world.jade'
           'hola': 'test/fixtures/templates/hola_mundo.jade'
 ```
