@@ -32,7 +32,7 @@ module.exports = function(grunt) {
       for (namespace in templatesObj) {
         fileName = templatesObj[namespace];
         var destPath = path.resolve(fileName);
-        var contents = jade.compile(fs.readFileSync(destPath, 'utf8'), { client: true, compileDebug: false, filename: destPath }).toString();
+        var contents = jade.compileClient(fs.readFileSync(destPath, 'utf8'), { compileDebug: false, filename: destPath }).toString();
         templateString += "JST['" + namespace + "'] = " + contents + ";\n";
       }
 
