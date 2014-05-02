@@ -50,6 +50,19 @@ grunt.initConfig({
 });
 ```
 
+or in CoffeeScript
+
+```coffee
+  jadeClient:
+    development:
+      options:
+        requireJs: true
+      files:
+        'tmp/hello_world.js':
+          'hello': 'test/fixtures/templates/hello_world.jade'
+          'hola': 'test/fixtures/templates/hola_mundo.jade'
+```
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
