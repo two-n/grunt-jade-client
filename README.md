@@ -1,4 +1,4 @@
-# grunt-jade-client
+# grunt-jade-client [![Build Status](https://travis-ci.org/two-n/grunt-jade-client.svg?branch=master)](https://travis-ci.org/two-n/grunt-jade-client)
 
 > A grunt task to compile jade templates into a javascript file (like templates.js) to use on the client
 
