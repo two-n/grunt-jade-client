@@ -32,15 +32,6 @@ If set to true, then the output file will be a requireJs module.
 #### Default Options
 In this example, we build a single js file called `hello_world.js`, which has the result of two compile jade templates, `hello_world.jade`, and `hola_mundo.jade`.  We have also set requireJs to be `true`, which means we will consume this template as a requireJs module.  In our JavaScript, we can then get the output of the 'hello' template with `JST['hello']`.
 
-#### In the Browser
-
-Make sure that you have included your compiled template file, as well as runtime.js (copy of the file is on this repo for convenience).
-
-The following code (using jQuery) will render the "hello" template into #target.
-````js
-$("#target").html(JST["hello"]);
-````
-
 ```js
 grunt.initConfig({
   jadeClient: {
@@ -71,6 +62,15 @@ or in CoffeeScript
           'hello': 'test/fixtures/templates/hello_world.jade'
           'hola': 'test/fixtures/templates/hola_mundo.jade'
 ```
+
+#### In the Browser
+
+Make sure that you have included your compiled template file, as well as runtime.js (copy of the file is on this repo for convenience).
+
+The following code (using jQuery) will render the "hello" template into #target.
+````js
+$("#target").html(JST["hello"]);
+````
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
