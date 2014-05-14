@@ -65,7 +65,7 @@ or in CoffeeScript
 
 #### In the Browser
 
-Make sure that you have included your compiled template file, as well as runtime.js (copy of the file is on this repo for convenience).
+Make sure that you have included your compiled template file, as well as runtime.js (copy of the file is on this repo for convenience).  Note that there is another module which builds this dependency into the output file, [clientjade](https://github.com/jgallen23/clientjade).
 
 The following code (using jQuery) will render the "hello" template into #target.
 ````js
